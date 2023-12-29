@@ -5,7 +5,8 @@ import { persist } from "zustand/middleware";
 export const useTheme = create(
   persist(
     (set) => ({
-      theme: localStorage.getItem("theme") || "dark",
+      theme:
+        typeof window !== "undefined" ? localStorage.getItem("theme") : "light",
       settheme: (newtheme: any) =>
         set((state: any) => ({
           theme: newtheme,
