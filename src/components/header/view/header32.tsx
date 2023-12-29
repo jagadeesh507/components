@@ -23,7 +23,7 @@ function Header32() {
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-center items-center text-neutral-content">
+      <div className="hero-content text-center items-center">
         <div className="flex flex-col justify-center gap-6 w-full md:w-[50%]">
           <h1 className="font-extrabold text-5xl">
             Medium length hero heading goes here

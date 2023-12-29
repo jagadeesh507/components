@@ -55,7 +55,7 @@ function Pricing18() {
 
   console.log(pricingData);
   return (
-    <div className="flex justify-center p-4 md:p-20 bg-base-200 text-base-content">
+    <div className="flex justify-center p-4 md:p-20">
       <div className="flex flex-col gap-6 text-center">
         <p className="font-semibold">Tagline</p>
         <h1 className="text-4xl font-extrabold">Pricing plan</h1>

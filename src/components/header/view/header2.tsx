@@ -1,6 +1,6 @@
 function Header2() {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen ">
       <div className="hero-content flex-col flex-col-reverse md:flex-row-reverse gap-12 md:gap-20">
         <img src="../images/header_image_1.svg" className="w-full md:w-[50%]" />
         <div className="flex flex-col justify-center gap-6 w-full md:w-[50%]">

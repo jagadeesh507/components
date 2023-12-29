@@ -15,7 +15,7 @@ function Footer1() {
     <FaYoutube />,
   ];
   return (
-    <div className="flex flex-col  bg-base-200 text-base-content p-5 md:p-10">
+    <div className="flex flex-col p-5 md:p-10">
       <footer className="footer">
         <aside className="w-full md:max-w-lg flex flex-col gap-4">
           <h1 className="font-extrabold text-2xl">Logo</h1>

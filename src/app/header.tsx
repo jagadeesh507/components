@@ -45,13 +45,13 @@ export default function Home() {
           <li>
             <details>
               <summary>Components</summary>
-              <ul className="p-2 bg-base-100 rounded-t-none bg-secondary-content z-50">
+              <ul className="p-2  z-50">
                 {components?.map((ele, id) => {
                   return (
-                    <li key={id} className="z-50 bg-secondary-content ">
+                    <li key={id} className="z-50 ">
                       <a
                         href={`/components/${ele}`}
-                        className="link link-secondary no-underline"
+                        className="link no-underline"
                       >
                         {ele}
                       </a>
@@ -68,17 +68,17 @@ export default function Home() {
           <li>
             <details>
               <summary>Themes</summary>
-              <ul className="p-2 bg-base-100 rounded-t-none bg-secondary-content z-50 h-72 overflow-x-hidden overflow-scroll">
+              <ul className="p-2  z-50 h-72 overflow-x-hidden overflow-scroll">
                 {themes?.map((ele, id) => {
                   return (
                     <li
                       key={id}
-                      className="z-50 bg-secondary-content "
+                      className="z-50 "
                       onClick={() => {
                         settheme(ele);
                       }}
                     >
-                      <a className="link link-secondary no-underline">{ele}</a>
+                      <a className="link  no-underline">{ele}</a>
                     </li>
                   );
                 })}

@@ -3,7 +3,7 @@ import { policy } from "@/mock/footer";
 import { Column_1 } from "@/mock/footer";
 function Footer7() {
   return (
-    <div className="bg-base-200 text-base-content p-5 md:p-10">
+    <div className="p-5 md:p-10">
       <footer className="footer footer-center">
         <h1 className="font-extrabold text-2xl">Logo</h1>
         <nav className="flex gap-5 flex-col md:flex-row">
