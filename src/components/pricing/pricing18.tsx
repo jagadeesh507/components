@@ -55,14 +55,14 @@ function Pricing18() {
 
   console.log(pricingData);
   return (
-    <div className="flex justify-center p-4 md:p-20">
+    <div className="flex justify-center p-4 md:p-20 bg-base-200 text-base-content">
       <div className="flex flex-col gap-6 text-center">
         <p className="font-semibold">Tagline</p>
         <h1 className="text-4xl font-extrabold">Pricing plan</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4">
           {pricingData.map((pricing) => (
-            <div className="card w-full lg:w-96 bg-white text-black rounded-none border border-solid border-1 border-neutral relative">
+            <div className="card w-full lg:w-76 rounded-none border border-solid border-1 border-neutral relative">
               <div className="card-body items-center text-center">
                 <div className="space-y-3">
                   <h2 className="card-title">{pricing.planType}</h2>
