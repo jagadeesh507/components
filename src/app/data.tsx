@@ -16,6 +16,7 @@ const components = [
   "blogsection37",
   "blogsection49",
   "faq1",
+  "faq9",
   "faq13",
 ];
 export default components;
