@@ -13,5 +13,6 @@ const components = [
   "navbar2",
   "navbar9",
   "team1",
+  "team19",
 ];
 export default components;
