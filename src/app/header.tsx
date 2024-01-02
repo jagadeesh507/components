@@ -40,12 +40,12 @@ export default function Home() {
   ];
   return (
     <div className="flex justify-between">
-      <div className="flex-none z-50 ml-20">
+      <div className="flex-none z-50 ml-20 ">
         <ul className=" menu menu-horizontal px-1">
           <li>
             <details>
               <summary>Components</summary>
-              <ul className="p-2  z-50">
+              <ul className="p-2  z-50 h-96 overflow-x-hidden overflow-scroll">
                 {components?.map((ele, id) => {
                   return (
                     <li key={id} className="z-50 ">

@@ -15,5 +15,7 @@ const components = [
   "team19",
   "blogsection37",
   "blogsection49",
+  "faq1",
+  "faq13",
 ];
 export default components;
