@@ -6,7 +6,6 @@ const components = [
   "contact5",
   "contact20",
   "pricing18",
-
   "feature1",
   "header44",
   "header50",
@@ -14,5 +13,7 @@ const components = [
   "navbar9",
   "team1",
   "team19",
+  "blogsection37",
+  "blogsection49",
 ];
 export default components;
