@@ -20,7 +20,7 @@ function Career27() {
           varius enim in eros elementum tristique.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-between md:space-x-10 space-y-10">
+      <div className="flex flex-col md:flex-row md:justify-between md:space-x-10 space-y-10 md:space-y-0">
         <div className="flex flex-col gap-y-10">
           {Array.from({ length: 4 }, (_, index) => (
             <div className="card border">
@@ -52,7 +52,11 @@ function Career27() {
           ))}
         </div>
         <div className="w-full md:w-1/2 rounded-2xl">
-          <img src="../images/header_image_1.svg" alt="image" />
+          <img
+            className="rounded-2xl"
+            src="../images/header_image_1.svg"
+            alt="image"
+          />
         </div>
       </div>
     </div>
