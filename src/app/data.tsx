@@ -22,5 +22,6 @@ const components = [
   "career13",
   "career27",
   "stats2",
+  "stats34",
 ];
 export default components;
