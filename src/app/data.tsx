@@ -18,5 +18,6 @@ const components = [
   "faq1",
   "faq9",
   "faq13",
+  "career4",
 ];
 export default components;
