@@ -17,7 +17,7 @@ function Career4() {
           varius enim in eros elementum tristique.
         </p>
       </div>
-      <div className="join join-vertical w-full md:w-[50%] text-left">
+      <div className="join join-vertical w-full lg:w-[60%] text-left">
         {Array.from({ length: 3 }, (_, index) => (
           <div key={index} className="collapse collapse-arrow join-item">
             <input type="radio" name="my-accordion-4" />
@@ -28,11 +28,16 @@ function Career4() {
               {Array.from({ length: 3 }, (_, index) => (
                 <div key={index} className="card border mb-4">
                   <div className="card-body">
-                    <h2 className="card-title">{Jobs.jobTitle}</h2>
-                    <p>{Jobs.des}</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-outline">Apply now</button>
+                    <div className="flex justify-between pb-4">
+                      <div className="flex flex-col">
+                        <h2 className="card-title">{Jobs.jobTitle}</h2>
+                        <p>{Jobs.location}</p>
+                      </div>
+                      <div className="card-actions">
+                        <button className="btn btn-outline">Apply now</button>
+                      </div>
                     </div>
+                    <p>{Jobs.des}</p>
                   </div>
                 </div>
               ))}
