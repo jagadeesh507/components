@@ -15,8 +15,8 @@ function Testimonial7() {
       title: "Web flow 1",
       dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
       avatar: "../images/avatars/avatar1.png",
-      name: "full Name",
-      position: "full stack developer",
+      name: "Manikanta P",
+      position: "Full stack developer",
       company: "contentQL",
     },
     {
@@ -24,8 +24,8 @@ function Testimonial7() {
       title: "Web flow 2 ",
       dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
       avatar: "../images/avatars/avatar2.jpg",
-      name: "full Name",
-      position: "frontEnd developer",
+      name: "Charan M",
+      position: "Frontend developer",
       company: "ResonateAes",
     },
     {
@@ -33,7 +33,7 @@ function Testimonial7() {
       title: "web flow 3",
       dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
       avatar: "../images/avatars/avatar3.avif",
-      name: "full Name",
+      name: "Abdul Rahaman",
       position: "Backend Developer",
       company: "AES",
     },
@@ -94,9 +94,11 @@ function Testimonial7() {
           <div
             key={index}
             onClick={() => handleDots(index)}
-            className="cursor-pointer hover:scale-110 hover:text-primary"
+            className={`cursor-pointer hover:scale-110 hover:text-primary ${
+              currentindex === index ? "text-primary" : ""
+            }`}
           >
-            <BsDot size={24} />
+            <BsDot size={36} />
           </div>
         ))}
       </div>

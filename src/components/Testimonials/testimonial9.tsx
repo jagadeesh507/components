@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
-import ArrowGroup from "./arrow-group";
-import { useState } from "react";
+import Slider from "react-slick";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { AiOutlineDown } from "react-icons/ai";
 
-function Sliders() {
-  const [currentindex, setCurrentIndex] = useState(0);
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+const Testimonial9: React.FC = () => {
   const slides: any[] = [
     {
       review: 2,
@@ -48,13 +50,50 @@ function Sliders() {
       company: "Company",
     },
   ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  };
 
   return (
-    <div className="p-8 md:p-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 md:gap-y-5">
+    <div className="w-full md:px-20">
+      <Slider {...settings}>
         {slides.map((values, index) => (
           <div key={index} className="card border">
-            <div className="card-body -mx-2 gap-y-6 md:gap-y-8">
+            <div className="card-body md:gap-y-8">
               <div className="rating">
                 {[1, 2, 3, 4, 5].map((value, index1) => (
                   <input
@@ -62,7 +101,7 @@ function Sliders() {
                     type="radio"
                     value={value}
                     name={`rating-${index}-${index1}`}
-                    checked={values.review == value}
+                    checked={values.review === value}
                     className="mask mask-star-2"
                   />
                 ))}
@@ -84,15 +123,9 @@ function Sliders() {
             </div>
           </div>
         ))}
-      </div>
-
-      <ArrowGroup
-        slides={slides}
-        currentindex={currentindex}
-        setCurrentIndex={setCurrentIndex}
-      />
+      </Slider>
     </div>
   );
-}
+};
 
-export default Sliders;
+export default Testimonial9;
