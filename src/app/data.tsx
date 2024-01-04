@@ -23,6 +23,9 @@ const components = [
   "career27",
   "stats2",
   "stats34",
+  "gallery1",
+  "gallery9",
+  "gridlist1",
   "portfolio15",
   "testimonial7",
 ];
