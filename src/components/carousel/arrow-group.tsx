@@ -3,11 +3,17 @@ import { LeftIcon } from "./arrow-icons";
 import { RightIcon } from "./arrow-icons";
 import { useState } from "react";
 
-export default function ArrowGroup({
+interface ArrowGroupProps {
+  slides: any[];
+  currentindex: number;
+  setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const ArrowGroup: React.FC<ArrowGroupProps> = ({
   slides = [],
   currentindex,
   setCurrentIndex,
-}) {
+}) => {
   const handlePrev = () => {
     const isFirstslide = currentindex === 0;
     const prev = isFirstslide ? slides.length - 1 : currentindex - 1;
@@ -42,4 +48,4 @@ export default function ArrowGroup({
       </div>
     </div>
   );
-}
+};
