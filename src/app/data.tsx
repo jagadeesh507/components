@@ -27,5 +27,6 @@ const components = [
   "gallery9",
   "gridlist1",
   "portfolio15",
+  "testimonial7",
 ];
 export default components;
