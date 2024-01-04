@@ -49,3 +49,5 @@ const ArrowGroup: React.FC<ArrowGroupProps> = ({
     </div>
   );
 };
+
+export default ArrowGroup;
